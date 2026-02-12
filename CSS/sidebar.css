@@ -1,0 +1,110 @@
+#sidebar {
+    width: 380px;
+    background: var(--nada-grey);
+    border-right: 1px solid var(--nada-grey-light);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+#header {
+    padding: 24px;
+    background: var(--black);
+    border-bottom: 2px solid var(--baby-blue);
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+}
+
+.status {
+    font-size: 12px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--baby-blue);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 10px var(--baby-blue); }
+    50% { opacity: 0.4; }
+}
+
+#location-info {
+    padding: 20px;
+    background: var(--nada-grey-light);
+    border-bottom: 1px solid var(--nada-grey-light);
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.info-row:last-child {
+    margin-bottom: 0;
+}
+
+.info-label {
+    color: var(--text-muted);
+}
+
+.info-value {
+    font-weight: 500;
+    color: var(--baby-blue);
+    font-family: 'Courier New', monospace;
+}
+
+#plane-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.no-planes {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-muted);
+}
+
+.no-planes-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+
+/* Scrollbar styling */
+#plane-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#plane-list::-webkit-scrollbar-track {
+    background: var(--nada-grey);
+}
+
+#plane-list::-webkit-scrollbar-thumb {
+    background: var(--nada-grey-light);
+    border-radius: 4px;
+}
+
+#plane-list::-webkit-scrollbar-thumb:hover {
+    background: var(--baby-blue);
+}

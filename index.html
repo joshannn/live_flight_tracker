@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <div id="container">
+        <aside id="sidebar">
+            <header id="header">
+                <h1>✈️ SkyTracker</h1>
+                <div class="status">
+                    <span class="status-dot"></span>
+                    <span id="status-text">Initializing...</span>
+                </div>
+            </header>
+            
+            <section id="location-info">
+                <div class="info-row">
+                    <span class="info-label">Your Location:</span>
+                    <span class="info-value" id="loc-coords">Detecting...</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Planes in Range:</span>
+                    <span class="info-value" id="plane-count">0</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Last Update:</span>
+                    <span class="info-value" id="last-update">--:--:--</span>
+                </div>
+            </section>
+
+            <section id="plane-list">
+                <div class="loading" id="initial-loading">
+                    <div class="spinner"></div>
+                    <div>Detecting your location...</div>
+                </div>
+            </section>
+        </aside>
+
+        <main id="map"></main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/planes.js"></script>
+    <script src="js/location.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
