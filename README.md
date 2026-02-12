@@ -1,4 +1,4 @@
-# ✈️ Plane Tracker
+#  Plane Tracker
 
 Real-time aircraft tracking application using your browser's geolocation and the OpenSky Network API.
 
@@ -52,5 +52,6 @@ Uses [OpenSky Network](https://opensky-network.org/) REST API (no key required).
 - Requires geolocation permission
 
 ## License
+
 
 MIT
