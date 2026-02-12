@@ -17,7 +17,6 @@ Real-time aircraft tracking application using your browser's geolocation and the
 - **White**: `#ffffff` (Text, contrast)
 - **Black**: `#000000` (Deep backgrounds, borders)
 
-## Project Structure
 plane-tracker/
 ├── index.html          # Main entry point
 ├── css/
@@ -26,12 +25,12 @@ plane-tracker/
 │   ├── sidebar.css     # Sidebar layout, header, plane list
 │   └── components.css  # Cards, buttons, badges, UI elements
 ├── js/
-│   ├── utils.js        # Helper functions (distance, formatting)
+│   ├── utils.js        # Helper functions (distance calculations, formatting)
 │   ├── map.js          # Leaflet map management
-│   ├── planes.js       # Aircraft data fetching and UI
+│   ├── planes.js       # Aircraft data fetching and UI handling
 │   ├── location.js     # Geolocation handling
 │   └── main.js         # Application initialization
-└── README.md
+└── README.md           # Project documentation
 
 
 ## Usage
@@ -55,3 +54,4 @@ Uses [OpenSky Network](https://opensky-network.org/) REST API (no key required).
 
 
 MIT
+
